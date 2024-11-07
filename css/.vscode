@@ -1,0 +1,7 @@
+class calculo {
+    venta(){
+        console.log("probando venta...")
+    }
+}
+let cal=new calculo()
+cal.venta()

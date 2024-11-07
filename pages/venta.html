@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/page.css">
+        <title>Ventas</title>
+    </head>
+    <body>
+        <section class="contenedor"> <!--sirve el "id"para darle css(es mas para js) pero le cambiamos 'class' para el css se mejor -->
+            <h1>VENTAS DE PRODUCTOS</h1>
+            <form action="../index.html">
+                <div class="grupo"> <!--cada div agrupa informacion-->
+                    <label for="costo">Costo</label> <!--el for="costo"hace el efecto del click-->
+                    <input type="text" id="costo" placeholder="Ingrese costo de venta"/> <!--agrupar controles con:titulo y control, luego al aplicar estilos se hae mas facil-->
+                </div>
+                <div class="grupo"> <!--dos div continuos puestos al ultimo-->
+                    <label for="descuento">DESCUENTO(%)</label>
+                    <input type=" text" id="descuento" value="0" placeholder="Porcentaje de descuento"/>
+                </div>
+                <div class="grupo">
+                    <label>Iva(12%)</label>
+                    <input type="checkbox" name="iva" id="iva" checked>
+                </div>
+                <div class="grupo">
+                    <button type="button" onclick="cal.venta()">calcular</button>
+                    <button type="reset">Limpiar</button>
+                    <button type="submit">Regresar</button>
+                </div>
+                <textarea id="resp" rows="10">Respuesta aqui...</textarea>
+
+            </form>
+        </section>
+        <script src="../js/calculos.js"></script>
+    </body>
+</html>

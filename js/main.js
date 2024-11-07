@@ -122,3 +122,25 @@ function tablas(){
     }
     resp.innerHTML = msg
   }
+  function test(){
+    debugger
+    let resp="", num1="", num2="", r=0, msg=""
+    num1=document.getElementById("num1").value
+    num2=document.getElementById("num2").value
+    resp=document.getElementById("resp").value
+    num1 = parseInt(num1)
+    num2 = parseInt(num2)
+    if (num1>num2){
+      while (num1>num2){
+        if (num2 % 2 ==1){
+          r=num2
+        }else{
+          r="vuelva a ingresar"
+        }
+      }
+    }
+    msg= msg + `${r}`
+    num2 =num2 +1
+    resp.innerHTML = msg
+  }
+  
